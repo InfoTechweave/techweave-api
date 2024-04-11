@@ -30,6 +30,13 @@ Route::get('/home', function () {
     return view('home');
 })->name('home');
 
+Route::get('/addcash', function () {
+    return view('addcash');
+})->name('addcash');
+
+Route::get('/card', function () {
+    return view('card');
+})->name('card');
 // Route::post('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register',  [AuthController::class, 'register'])->name('register');
 // Route::post('/verify-otp', [AuthController::class, 'verifyOTP'] )->name('ot');
