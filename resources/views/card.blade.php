@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ asset('css/card/global.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/card/index.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" />
+
+    {{-- <style>
+        @font-face {
+            font-family: "Nomenclatur";
+            src: url("./public/Nomenclatur-LightCondensed.ttf");
+            font-weight: 400;
+        }
+    </style> --}}
+</head>
+
+<body>
+    <div class="debit-card">
+        <div class="frame-parent">
+            <div class="frame-group">
+                <div class="frame-wrapper">
+                    <div class="title-section-parent">
+                        <img class="title-section-icon" alt=""
+                            src="{{ asset('img/card/title-section.svg') }}" />
+                            <a href="{{ route('addcash') }}">
+                        <img class="arrow-1-icon" loading="lazy" alt=""
+                            src="{{ asset('img/card/arrow-1.svg') }}" />
+                            </a>
+                        <img class="main-logo-1" loading="lazy" alt=""
+                            src="{{ asset('img/card/main-logo-1@2x.png') }}" />
+                    </div>
+                </div>
+                <div class="rectangle-parent">
+                    <div class="frame-child"></div>
+                    <div class="amount-to-pay-container">
+                        <span class="amount-to-pay">Amount to Pay: </span>
+                        <span class="span">₹1000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="frame-container">
+                <div class="frame-div">
+                    <div class="frame-wrapper1">
+                        <input type="radio" id="credit_card" name="payment_method" value="credit_card">
+                    </div>
+                    <div class="credit-card">Credit Card</div>
+                </div>
+            </div>
+            <div class="frame-wrapper2">
+                <div class="frame-parent1">
+                    <div class="frame-parent2">
+                        <div class="enter-card-number-label-parent">
+                            <div class="enter-card-number-label">
+                                <div class="debit-cards-container">
+                                    <div class="frame-parent3">
+                                        <div class="frame-wrapper3">
+                                            <div class="ellipse-parent">
+                                                <input type="radio" id="DEBIT_card" name="payment_method" value="DEBIT_card">
+                                            </div>
+                                        </div>
+                                        <div class="debit-card1">Debit Card</div>
+                                    </div>
+                                    <div class="card-number-wrapper">
+                                        <div class="card-number">Card number</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wrapper-frame-27">
+                                <input class="wrapper-frame-27-child" placeholder="Enter Card Number" type="text" />
+
+                                <div class="rectangle-group">
+                                    <div class="rectangle-div"></div>
+                                    <div class="enter-card-number">Enter Card Number</div>
+                                </div>
+                            </div>
+                            <div class="frame-parent4">
+                                <div class="expiry-date-parent">
+                                    <div class="expiry-date">Expiry Date</div>
+                                    <input class="expiry-date-container" placeholder="MM/YY" type="text" />
+                                </div>
+                                <div class="layout-for-c-v-v-and-enter-nam">
+                                    <div class="cvv">CVV</div>
+                                    <input class="expiry-date-container" placeholder="CVV" type="text" />
+                                </div>
+                                <div class="layout-for-c-v-v-and-enter-nam1">
+                                    <input class="enter-name" placeholder="Enter Name" type="text" />
+
+                                    <div class="layout-for-c-v-v-and-enter-nam-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="net-banking-container">
+                            <div class="card-details-and-security-cont-wrapper">
+                                <div class="card-details-and-security-cont"></div>
+                            </div>
+                            <div class="net-banking">Net Banking</div>
+                        </div>
+                        <div class="you-must-be-to-play-a-p-t-warn">
+                            <div class="warning-with-vignette-shape">
+                                <button class="rectangle-container">
+                                    <div class="frame-child1"></div>
+                                    <b class="next">Next</b>
+                                </button>
+                                <div class="layout-with-age-verification-a-wrapper">
+                                    <div class="layout-with-age-verification-a">
+                                        <img class="paytm-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/card/paytm.svg') }}" />
+
+                                        <img class="visa-icon" loading="lazy" alt="" src="{{ asset('img/card/visa.svg') }}" />
+                                        
+                                        <img class="master-card-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/card/master-card.svg') }}" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warning-message">
+                        <div class="you-must-be-18-to-play-andhr-parent">
+                            <div class="you-must-be-container">
+                                <p class="you-must-be">You must be 18+ to play.</p>
+                                <p class="andhra-pradesh-telangana">
+                                    Andhra Pradesh, Telangana, Sikkim, Nagaland and Assam
+                                    players are not allowed to play cash
+                                </p>
+                                <p class="games">games.</p>
+                            </div>
+                            <img class="warning-1-icon" loading="lazy" alt=""
+                                src="{{ asset('img/card/warning-1.svg') }}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="name-input">
+            <div class="m-m-y-y-field-parent">
+                <img class="m-m-y-y-field" alt="" src=" {{ asset('img/card/rectangle-31@2x.png') }}" />
+               
+                <img class="vignette-icon" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
+                
+                <img class="vignette-icon1" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
+            </div>
+            <img class="vignette-icon2" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
+        </div>
+    </div>
+</body>
+
+</html>
