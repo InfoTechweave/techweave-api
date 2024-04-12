@@ -26,10 +26,10 @@
                     <div class="title-section-parent">
                         <img class="title-section-icon" alt=""
                             src="{{ asset('img/card/title-section.svg') }}" />
-                            <a href="{{ route('addcash') }}">
-                        <img class="arrow-1-icon" loading="lazy" alt=""
-                            src="{{ asset('img/card/arrow-1.svg') }}" />
-                            </a>
+                        <a href="{{ route('addcash') }}">
+                            <img class="arrow-1-icon" loading="lazy" alt=""
+                                src="{{ asset('img/card/arrow-1.svg') }}" />
+                        </a>
                         <img class="main-logo-1" loading="lazy" alt=""
                             src="{{ asset('img/card/main-logo-1@2x.png') }}" />
                     </div>
@@ -42,14 +42,15 @@
                     </div>
                 </div>
             </div>
-            <div class="frame-container">
+
+            {{-- <div class="frame-container">
                 <div class="frame-div">
                     <div class="frame-wrapper1">
                         <input type="radio" id="credit_card" name="payment_method" value="credit_card">
                     </div>
                     <div class="credit-card">Credit Card</div>
                 </div>
-            </div>
+            </div> --}}
             <div class="frame-wrapper2">
                 <div class="frame-parent1">
                     <div class="frame-parent2">
@@ -59,17 +60,55 @@
                                     <div class="frame-parent3">
                                         <div class="frame-wrapper3">
                                             <div class="ellipse-parent">
-                                                <input type="radio" id="DEBIT_card" name="payment_method" value="DEBIT_card">
+                                                <input type="radio" id="credit_card" name="payment_method"
+                                                    value="credit_card" checked>
+                                            </div>
+                                        </div>
+                                        <div class="debit-card1">Credit Card</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="frame-parent4 nilay">
+                                <div class="wrapper-frame-27">
+                                    <input class="wrapper-frame-27-child" placeholder="Enter Card Number" type="text" />
+
+                                <div class="rectangle-group">
+                                    <div class="rectangle-div"></div>
+                                    <div class="enter-card-number">Enter Card Number</div>
+                                </div>
+                            </div>
+                                <div class="expiry-date-parent">
+                                    <div class="expiry-date">Expiry Date</div>
+                                    <input class="expiry-date-container" placeholder="MM/YY" type="text" />
+                                </div>
+                                <div class="layout-for-c-v-v-and-enter-nam">
+                                    <div class="cvv">CVV</div>
+                                    <input class="expiry-date-container" placeholder="CVV" type="text" />
+                                </div>
+                                <div class="layout-for-c-v-v-and-enter-nam1">
+                                    <input class="enter-name" placeholder="Enter Name" type="text" />
+
+                                    <div class="layout-for-c-v-v-and-enter-nam-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="enter-card-number-label-parent">
+                            <div class="enter-card-number-label">
+                                <div class="debit-cards-container">
+                                    <div class="frame-parent3">
+                                        <div class="frame-wrapper3">
+                                            <div class="ellipse-parent">
+                                                <input type="radio" id="DEBIT_card" name="payment_method"
+                                                    value="DEBIT_card">
                                             </div>
                                         </div>
                                         <div class="debit-card1">Debit Card</div>
                                     </div>
-                                    <div class="card-number-wrapper">
-                                        <div class="card-number">Card number</div>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="wrapper-frame-27">
+                            <div class="frame-parent4 nilay1">
+                                <div class="wrapper-frame-27">
+                               
                                 <input class="wrapper-frame-27-child" placeholder="Enter Card Number" type="text" />
 
                                 <div class="rectangle-group">
@@ -77,7 +116,6 @@
                                     <div class="enter-card-number">Enter Card Number</div>
                                 </div>
                             </div>
-                            <div class="frame-parent4">
                                 <div class="expiry-date-parent">
                                     <div class="expiry-date">Expiry Date</div>
                                     <input class="expiry-date-container" placeholder="MM/YY" type="text" />
@@ -94,10 +132,21 @@
                             </div>
                         </div>
                         <div class="net-banking-container">
-                            <div class="card-details-and-security-cont-wrapper">
-                                <div class="card-details-and-security-cont"></div>
+                            <div class="frame-wrapper1">
+                                <input type="radio" id="net_banking" name="payment_method" value="net_banking">
                             </div>
-                            <div class="net-banking">Net Banking</div>
+                            <div class="net-banking1">Net Banking</div>
+                            <div class="net-banking-item"></div>
+                           <div class="net">
+                            <img class="rectangle-icon" loading="lazy" alt=""
+                                src="{{ asset('img/card//Newfolder/rectangle-296@2x.png') }}" />
+
+                            <img class="net-banking-child1" loading="lazy" alt=""
+                                src="{{ asset('img/card//Newfolder/rectangle-297@2x.png') }}" />
+
+                            <img class="net-banking-child2" loading="lazy" alt=""
+                                src="{{ asset('img/card//Newfolder/rectangle-298@2x.png') }}" />
+                           </div>
                         </div>
                         <div class="you-must-be-to-play-a-p-t-warn">
                             <div class="warning-with-vignette-shape">
@@ -110,8 +159,9 @@
                                         <img class="paytm-icon" loading="lazy" alt=""
                                             src="{{ asset('img/card/paytm.svg') }}" />
 
-                                        <img class="visa-icon" loading="lazy" alt="" src="{{ asset('img/card/visa.svg') }}" />
-                                        
+                                        <img class="visa-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/card/visa.svg') }}" />
+
                                         <img class="master-card-icon" loading="lazy" alt=""
                                             src="{{ asset('img/card/master-card.svg') }}" />
                                     </div>
@@ -139,14 +189,75 @@
         <div class="name-input">
             <div class="m-m-y-y-field-parent">
                 <img class="m-m-y-y-field" alt="" src=" {{ asset('img/card/rectangle-31@2x.png') }}" />
-               
+
                 <img class="vignette-icon" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
-                
+
                 <img class="vignette-icon1" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
             </div>
             <img class="vignette-icon2" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
         </div>
     </div>
+    
 </body>
 
 </html>
+<script>
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const creditCardRadio = document.getElementById('credit_card');
+//     const debitCardRadio = document.getElementById('DEBIT_card'); // Corrected ID
+//     const netBankingRadio = document.getElementById('net_banking'); // Corrected ID
+//     const creditCardDetails = document.querySelector('.nilay');
+//     const debitCardDetails = document.querySelector('.frame-parent4');
+//     const netDetails = document.querySelector('.net'); // Corrected class
+
+//     creditCardRadio.addEventListener('click', function () {
+//         creditCardDetails.style.display = 'block';
+//         debitCardDetails.style.display = 'none';
+//         netDetails.style.display = 'none';
+//     });
+
+//     debitCardRadio.addEventListener('click', function () {
+//         creditCardDetails.style.display = 'none';
+//         debitCardDetails.style.display = 'block';
+//         netDetails.style.display = 'none';
+//     });
+
+//     netBankingRadio.addEventListener('click', function () {
+//         netDetails.style.display = 'block'; 
+//         creditCardDetails.style.display = 'none';
+//         debitCardDetails.style.display = 'none';
+//     });
+// });
+document.addEventListener("DOMContentLoaded", function () {
+    const creditCardRadio = document.getElementById('credit_card');
+    const debitCardRadio = document.getElementById('DEBIT_card');
+    const netBankingRadio = document.getElementById('net_banking');
+    const creditCardDetails = document.querySelector('.nilay');
+    const debitCardDetails = document.querySelector('.nilay1');
+    const netDetails = document.querySelector('.net');
+
+    // Initially hide all sections except credit card details
+    debitCardDetails.style.display = 'none';
+    netDetails.style.display = 'none';
+
+    creditCardRadio.addEventListener('click', function () {
+        creditCardDetails.style.display = 'block';
+        debitCardDetails.style.display = 'none';
+        netDetails.style.display = 'none';
+    });
+
+    debitCardRadio.addEventListener('click', function () {
+        creditCardDetails.style.display = 'none';
+        debitCardDetails.style.display = 'block';
+        netDetails.style.display = 'none';
+    });
+
+    netBankingRadio.addEventListener('click', function () {
+        creditCardDetails.style.display = 'none';
+        debitCardDetails.style.display = 'none';
+        netDetails.style.display = 'block';
+    });
+});
+
+</script>

@@ -134,6 +134,8 @@
                     </div>
                 </div>
             </div>
+
+        {{-- Upcoming MAtch Record --}}
             <div class="team-section-1-parent">
                 <div class="team-section-1">
                     <div class="european-cricket-icon">
@@ -233,7 +235,533 @@
                         <div class="wrapper-3dicons1">
                             <img class="dicons1" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
                         </div>
-                        <input class="frame-input" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize" type="text" />
+                        <input class="frame-input" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
+                    </div>
+                </div>
+                <div class="team-section-2">
+                    <div class="team-section-2-inner">
+                        <div class="frame-parent5">
+                            <div class="frame-parent6">
+                                <div class="european-cricket-spain-t10-container">
+                                    <div class="european-cricket-2">
+                                        European Cricket - Spain, T10
+                                    </div>
+                                </div>
+                                <div class="frame-parent7">
+                                    <div class="ellipse-group">
+                                        <img class="frame-child13" loading="lazy" alt=""
+                                            src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                                        <div class="india-frame">
+                                            <b class="india2">INDIA</b>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper2">
+                                        <div class="v-container">
+                                            <i class="v2">V</i>
+                                            <div class="s-frame">
+                                                <i class="s2">S</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper3">
+                                        <div class="frame-parent8">
+                                            <div class="pakistan-container">
+                                                <b class="pakistan2">PAKISTAN</b>
+                                            </div>
+                                            <img class="frame-child14" loading="lazy" alt=""
+                                                src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-17m-2s-container">
+                                <div class="h-17m-2s2">1h 17m 2s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle-parent1">
+                        <div class="frame-child15"></div>
+                        <div class="wrapper-3dicons2">
+                            <img class="dicons2" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                        <input class="frame-child16" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
+                    </div>
+                </div>
+                <div class="team-section-5">
+                    <img class="team-section-5-child" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <div class="ellipse-container">
+                        <img class="frame-child17" alt="" src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+                        <div class="india-wrapper1">
+                            <b class="india3">INDIA</b>
+                        </div>
+                    </div>
+                    <i class="v3">V</i>
+                    <i class="s3">S</i>
+                    <b class="pakistan3">PAKISTAN</b>
+                    <div class="european-cricket-3">European Cricket - Spain, T10</div>
+                    <div class="team-section-5-item"></div>
+                    <div class="win-samsung-smartphone">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s3">1h 17m 2s</div>
+                    <div class="contestant-score-label">
+                        <div class="wrapper-3dicons3">
+                            <img class="dicons3" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section-6">
+                    <img class="team-section-6-child" alt=""
+                        src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                    <img class="team-section-6-item" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <i class="v4">V</i>
+                    <i class="s4">S</i>
+                    <b class="pakistan4">PAKISTAN</b>
+                    <div class="european-cricket-4">European Cricket - Spain, T10</div>
+                    <div class="team-section-6-inner"></div>
+                    <div class="win-samsung-smartphone1">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s4">1h 17m 2s</div>
+                    <div class="team-section-6-inner1">
+                        <div class="frame-parent9">
+                            <div class="india-wrapper2">
+                                <b class="india4">INDIA</b>
+                            </div>
+                            <div class="wrapper-3dicons4">
+                                <img class="dicons4" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section-7">
+                    <img class="team-section-7-child" alt=""
+                        src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                    <img class="team-section-7-item" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <i class="v5">V</i>
+                    <i class="s5">S</i>
+                    <b class="pakistan5">PAKISTAN</b>
+                    <div class="european-cricket-5">European Cricket - Spain, T10</div>
+                    <div class="team-section-7-inner"></div>
+                    <div class="win-samsung-smartphone2">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s5">1h 17m 2s</div>
+                    <div class="team-section-7-inner1">
+                        <div class="frame-parent10">
+                            <div class="india-wrapper3">
+                                <b class="india5">INDIA</b>
+                            </div>
+                            <div class="wrapper-3dicons5">
+                                <img class="dicons5" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section-4">
+                    <img class="team-section-4-child" alt=""
+                        src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                    <img class="team-section-4-item" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <i class="v6">V</i>
+                    <i class="s6">S</i>
+                    <b class="pakistan6">PAKISTAN</b>
+                    <div class="european-cricket-6">European Cricket - Spain, T10</div>
+                    <div class="team-section-4-inner"></div>
+                    <div class="win-samsung-smartphone3">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s6">1h 17m 2s</div>
+                    <div class="team-section-4-inner1">
+                        <div class="frame-parent11">
+                            <div class="india-wrapper4">
+                                <b class="india6">INDIA</b>
+                            </div>
+                            <div class="wrapper-3dicons6">
+                                <img class="dicons6" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- Live Match Record --}}
+
+            <div class="team-section-1-parent">
+                <div class="team-section-1">
+                    <div class="european-cricket-icon">
+                        <div class="frame-container">
+                            <div class="i-n-d-i-a-pakistan-team-parent">
+                                <div class="i-n-d-i-a-pakistan-team">
+                                    <div class="european-cricket-">
+                                        European Cricket - Spain, T10
+                                    </div>
+                                </div>
+                                <div class="frame-div">
+                                    <div class="hms-timer-parent">
+                                        <img class="hms-timer-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                                        <div class="india-wrapper">
+                                            <b class="india">INDIA</b>
+                                        </div>
+                                    </div>
+                                    <div class="team-pakistan-icon">
+                                        <div class="v-parent">
+                                            <i class="v">V</i>
+                                            <div class="s-wrapper">
+                                                <i class="s">S</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="squad-members-list">
+                                        <div class="prize-pool">
+                                            <div class="india-flag-icon">
+                                                <b class="pakistan">PAKISTAN</b>
+                                            </div>
+                                            <img class="prize-pool-child" loading="lazy" alt=""
+                                                src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timer-h-m-s">
+                                <div class="h-17m-2s">1h 17m 2s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-s-logo">
+                        <div class="v-s-logo-child"></div>
+                        <div class="wrapper-3dicons">
+                            <img class="dicons" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                        <input class="prize-pool-amount" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
+                    </div>
+                </div>
+                <div class="team-section-3">
+                    <div class="team-section-3-inner">
+                        <div class="frame-parent1">
+                            <div class="frame-parent2">
+                                <div class="european-cricket-spain-t10-wrapper">
+                                    <div class="european-cricket-1">
+                                        European Cricket - Spain, T10
+                                    </div>
+                                </div>
+                                <div class="frame-parent3">
+                                    <div class="ellipse-parent">
+                                        <img class="ellipse-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                                        <div class="india-container">
+                                            <b class="india1">INDIA</b>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper">
+                                        <div class="v-group">
+                                            <i class="v1">V</i>
+                                            <div class="s-container">
+                                                <i class="s1">S</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper1">
+                                        <div class="frame-parent4">
+                                            <div class="pakistan-wrapper">
+                                                <b class="pakistan1">PAKISTAN</b>
+                                            </div>
+                                            <img class="frame-child11" loading="lazy" alt=""
+                                                src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-17m-2s-wrapper">
+                                <div class="h-17m-2s1">1h 17m 2s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle-container">
+                        <div class="frame-child12"></div>
+                        <div class="wrapper-3dicons1">
+                            <img class="dicons1" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                        <input class="frame-input" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
+                    </div>
+                </div>
+                <div class="team-section-2">
+                    <div class="team-section-2-inner">
+                        <div class="frame-parent5">
+                            <div class="frame-parent6">
+                                <div class="european-cricket-spain-t10-container">
+                                    <div class="european-cricket-2">
+                                        European Cricket - Spain, T10
+                                    </div>
+                                </div>
+                                <div class="frame-parent7">
+                                    <div class="ellipse-group">
+                                        <img class="frame-child13" loading="lazy" alt=""
+                                            src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                                        <div class="india-frame">
+                                            <b class="india2">INDIA</b>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper2">
+                                        <div class="v-container">
+                                            <i class="v2">V</i>
+                                            <div class="s-frame">
+                                                <i class="s2">S</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper3">
+                                        <div class="frame-parent8">
+                                            <div class="pakistan-container">
+                                                <b class="pakistan2">PAKISTAN</b>
+                                            </div>
+                                            <img class="frame-child14" loading="lazy" alt=""
+                                                src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-17m-2s-container">
+                                <div class="h-17m-2s2">1h 17m 2s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle-parent1">
+                        <div class="frame-child15"></div>
+                        <div class="wrapper-3dicons2">
+                            <img class="dicons2" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                        <input class="frame-child16" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
+                    </div>
+                </div>
+                <div class="team-section-5">
+                    <img class="team-section-5-child" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <div class="ellipse-container">
+                        <img class="frame-child17" alt="" src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+                        <div class="india-wrapper1">
+                            <b class="india3">INDIA</b>
+                        </div>
+                    </div>
+                    <i class="v3">V</i>
+                    <i class="s3">S</i>
+                    <b class="pakistan3">PAKISTAN</b>
+                    <div class="european-cricket-3">European Cricket - Spain, T10</div>
+                    <div class="team-section-5-item"></div>
+                    <div class="win-samsung-smartphone">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s3">1h 17m 2s</div>
+                    <div class="contestant-score-label">
+                        <div class="wrapper-3dicons3">
+                            <img class="dicons3" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section-6">
+                    <img class="team-section-6-child" alt=""
+                        src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                    <img class="team-section-6-item" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <i class="v4">V</i>
+                    <i class="s4">S</i>
+                    <b class="pakistan4">PAKISTAN</b>
+                    <div class="european-cricket-4">European Cricket - Spain, T10</div>
+                    <div class="team-section-6-inner"></div>
+                    <div class="win-samsung-smartphone1">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s4">1h 17m 2s</div>
+                    <div class="team-section-6-inner1">
+                        <div class="frame-parent9">
+                            <div class="india-wrapper2">
+                                <b class="india4">INDIA</b>
+                            </div>
+                            <div class="wrapper-3dicons4">
+                                <img class="dicons4" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section-7">
+                    <img class="team-section-7-child" alt=""
+                        src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                    <img class="team-section-7-item" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <i class="v5">V</i>
+                    <i class="s5">S</i>
+                    <b class="pakistan5">PAKISTAN</b>
+                    <div class="european-cricket-5">European Cricket - Spain, T10</div>
+                    <div class="team-section-7-inner"></div>
+                    <div class="win-samsung-smartphone2">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s5">1h 17m 2s</div>
+                    <div class="team-section-7-inner1">
+                        <div class="frame-parent10">
+                            <div class="india-wrapper3">
+                                <b class="india5">INDIA</b>
+                            </div>
+                            <div class="wrapper-3dicons5">
+                                <img class="dicons5" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-section-4">
+                    <img class="team-section-4-child" alt=""
+                        src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                    <img class="team-section-4-item" alt=""
+                        src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+
+                    <i class="v6">V</i>
+                    <i class="s6">S</i>
+                    <b class="pakistan6">PAKISTAN</b>
+                    <div class="european-cricket-6">European Cricket - Spain, T10</div>
+                    <div class="team-section-4-inner"></div>
+                    <div class="win-samsung-smartphone3">
+                        Win Samsung Smartphone + ₹1 Lakh as 1st Prize
+                    </div>
+                    <div class="h-17m-2s6">1h 17m 2s</div>
+                    <div class="team-section-4-inner1">
+                        <div class="frame-parent11">
+                            <div class="india-wrapper4">
+                                <b class="india6">INDIA</b>
+                            </div>
+                            <div class="wrapper-3dicons6">
+                                <img class="dicons6" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- Completed Match Record --}}
+            <div class="team-section-1-parent">
+                <div class="team-section-1">
+                    <div class="european-cricket-icon">
+                        <div class="frame-container">
+                            <div class="i-n-d-i-a-pakistan-team-parent">
+                                <div class="i-n-d-i-a-pakistan-team">
+                                    <div class="european-cricket-">
+                                        European Cricket - Spain, T10
+                                    </div>
+                                </div>
+                                <div class="frame-div">
+                                    <div class="hms-timer-parent">
+                                        <img class="hms-timer-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                                        <div class="india-wrapper">
+                                            <b class="india">INDIA</b>
+                                        </div>
+                                    </div>
+                                    <div class="team-pakistan-icon">
+                                        <div class="v-parent">
+                                            <i class="v">V</i>
+                                            <div class="s-wrapper">
+                                                <i class="s">S</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="squad-members-list">
+                                        <div class="prize-pool">
+                                            <div class="india-flag-icon">
+                                                <b class="pakistan">PAKISTAN</b>
+                                            </div>
+                                            <img class="prize-pool-child" loading="lazy" alt=""
+                                                src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timer-h-m-s">
+                                <div class="h-17m-2s">1h 17m 2s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="v-s-logo">
+                        <div class="v-s-logo-child"></div>
+                        <div class="wrapper-3dicons">
+                            <img class="dicons" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                        <input class="prize-pool-amount" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
+                    </div>
+                </div>
+                <div class="team-section-3">
+                    <div class="team-section-3-inner">
+                        <div class="frame-parent1">
+                            <div class="frame-parent2">
+                                <div class="european-cricket-spain-t10-wrapper">
+                                    <div class="european-cricket-1">
+                                        European Cricket - Spain, T10
+                                    </div>
+                                </div>
+                                <div class="frame-parent3">
+                                    <div class="ellipse-parent">
+                                        <img class="ellipse-icon" loading="lazy" alt=""
+                                            src="{{ asset('img/home/ellipse-6@2x.png') }}" />
+
+                                        <div class="india-container">
+                                            <b class="india1">INDIA</b>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper">
+                                        <div class="v-group">
+                                            <i class="v1">V</i>
+                                            <div class="s-container">
+                                                <i class="s1">S</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="frame-wrapper1">
+                                        <div class="frame-parent4">
+                                            <div class="pakistan-wrapper">
+                                                <b class="pakistan1">PAKISTAN</b>
+                                            </div>
+                                            <img class="frame-child11" loading="lazy" alt=""
+                                                src="{{ asset('img/home/ellipse-7@2x.png') }}" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-17m-2s-wrapper">
+                                <div class="h-17m-2s1">1h 17m 2s</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rectangle-container">
+                        <div class="frame-child12"></div>
+                        <div class="wrapper-3dicons1">
+                            <img class="dicons1" alt="" src="{{ asset('img/home/3dicons@2x.png') }}" />
+                        </div>
+                        <input class="frame-input" placeholder="Win Samsung Smartphone + ₹1 Lakh as 1st Prize"
+                            type="text" />
                     </div>
                 </div>
                 <div class="team-section-2">
@@ -409,6 +937,7 @@
     </div>
 </body>
 
+
 </html>
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -416,7 +945,6 @@
         const sideMenu = document.querySelector('.my-account-parent');
 
         closeButton.addEventListener('click', function() {
-            // Toggle the class to show/hide the side menu
             sideMenu.classList.toggle('hidden');
         });
     });
