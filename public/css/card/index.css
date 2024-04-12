@@ -182,7 +182,7 @@
 .enter-card-number-label {
   align-self: stretch;
   flex-direction: row;
-  font-size: var(--font-size-xl);
+  /* font-size: var(--font-size-xl); */
 }
 .wrapper-frame-27-child {
   outline: 0;
@@ -604,6 +604,24 @@
   font-size: 15px;
   color: var(--color-black);
   font-family: var(--font-nomenclatur);
+}
+.net-banking-child2 {
+  left: 242px;
+}
+.net-banking-child1,
+.net-banking-child2 {
+  left: 152px;
+}
+
+.net-banking-child1,
+.net-banking-child2,
+.rectangle-icon {
+  /* position: absolute; */
+  top: 290px;
+  left: 62px;
+  width: 75px;
+  height: 58px;
+  object-fit: cover;
 }
 @media screen and (max-width: 1125px) {
   .frame-parent {
