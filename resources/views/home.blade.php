@@ -134,7 +134,6 @@
                     </div>
                 </div>
             </div>
-
         {{-- Upcoming MAtch Record --}}
             <div class="team-section-1-parent">
                 <div class="team-section-1">
