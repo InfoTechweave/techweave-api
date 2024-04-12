@@ -122,20 +122,13 @@
             </div>
             <div class="telecast-updates-wrapper">
                 <div class="telecast-updates">
-                    <button class="rectangle-group">
-                        <div class="rectangle-div"></div>
-                        <div class="upcoming">Upcoming</div>
-                    </button>
-                    <div class="live-wrapper">
-                        <div class="live">Live</div>
-                    </div>
-                    <div class="completed-wrapper">
-                        <div class="completed">Completed</div>
-                    </div>
+                    <button class="rectangle-group" onclick="showUpcoming(this)">Upcoming</button>
+                    <button class="rectangle-group" onclick="showLive(this)">Live</button>
+                    <button class="rectangle-group" onclick="showCompleted(this)">Completed</button>
                 </div>
             </div>
-        {{-- Upcoming MAtch Record --}}
-            <div class="team-section-1-parent">
+            {{-- Upcoming MAtch Record --}}
+            <div class="team-section-1-parent upcoming-matches">
                 <div class="team-section-1">
                     <div class="european-cricket-icon">
                         <div class="frame-container">
@@ -398,14 +391,13 @@
             </div>
             {{-- Live Match Record --}}
 
-            <div class="team-section-1-parent">
+            <div class="team-section-1-parent live-matches">
                 <div class="team-section-1">
                     <div class="european-cricket-icon">
                         <div class="frame-container">
                             <div class="i-n-d-i-a-pakistan-team-parent">
                                 <div class="i-n-d-i-a-pakistan-team">
                                     <div class="european-cricket-">
-                                        European Cricket - Spain, T10
                                     </div>
                                 </div>
                                 <div class="frame-div">
@@ -660,7 +652,7 @@
                 </div>
             </div>
             {{-- Completed Match Record --}}
-            <div class="team-section-1-parent">
+            <div class="team-section-1-parent completed-matches">
                 <div class="team-section-1">
                     <div class="european-cricket-icon">
                         <div class="frame-container">
@@ -922,10 +914,11 @@
                 </div>
             </div>
         </div>
+        
         <div class="frame-parent12">
             <div class="rectangle-parent2">
                 <img class="rectangle-icon" alt=""
-                    src="{{ asset('img/home/3dicons@2x.png') }}" />{{ asset('img/home/3dicons@2x.png') }}
+                    src="{{ asset('img/home/rectangle-31@2x.png') }}" />
 
                 <img class="vignette-icon" alt="" src="{{ asset('img/home/vignette1@2x.png') }}" />
 
@@ -947,11 +940,55 @@
             sideMenu.classList.toggle('hidden');
         });
     });
+    function showUpcoming(button) {
+        document.querySelectorAll('.rectangle-group').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        button.classList.add('selected');
+        document.querySelector('.upcoming-matches').style.display = 'block';
+        document.querySelector('.live-matches').style.display = 'none';
+        document.querySelector('.completed-matches').style.display = 'none';
+    }
+
+    function showLive(button) {
+        document.querySelectorAll('.rectangle-group').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        button.classList.add('selected');
+
+        document.querySelector('.upcoming-matches').style.display = 'none';
+        document.querySelector('.live-matches').style.display = 'block';
+        document.querySelector('.completed-matches').style.display = 'none';
+    }
+
+    function showCompleted(button) {
+        document.querySelectorAll('.rectangle-group').forEach(btn => {
+            btn.classList.remove('selected');
+        });
+        button.classList.add('selected');
+        document.querySelector('.upcoming-matches').style.display = 'none';
+        document.querySelector('.live-matches').style.display = 'none';
+        document.querySelector('.completed-matches').style.display = 'block';
+    }
 </script>
 
 
 <style>
     .my-account-parent.hidden {
+        display: none;
+    }
+    .telecast-updates-wrapper {
+        display: flex;
+    }
+    .rectangle-group {
+        background-color: #ccc; /* Default background color */
+    }
+    .rectangle-group.selected {
+        background-color: #007bff; /* Selected background color */
+        color: #fff; /* Text color when selected */
+    }
+    .live-wrapper,
+    .completed-wrapper {
         display: none;
     }
 </style>
