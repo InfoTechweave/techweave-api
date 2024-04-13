@@ -389,8 +389,8 @@
                     </div>
                 </div>
             </div>
-            {{-- Live Match Record --}}
 
+            {{-- Live Match Record --}}
             <div class="team-section-1-parent live-matches">
                 <div class="team-section-1">
                     <div class="european-cricket-icon">
@@ -651,6 +651,7 @@
                     </div>
                 </div>
             </div>
+
             {{-- Completed Match Record --}}
             <div class="team-section-1-parent completed-matches">
                 <div class="team-section-1">
@@ -914,11 +915,10 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="frame-parent12">
             <div class="rectangle-parent2">
-                <img class="rectangle-icon" alt=""
-                    src="{{ asset('img/home/rectangle-31@2x.png') }}" />
+                <img class="rectangle-icon" alt="" src="{{ asset('img/home/rectangle-31@2x.png') }}" />
 
                 <img class="vignette-icon" alt="" src="{{ asset('img/home/vignette1@2x.png') }}" />
 
@@ -928,7 +928,6 @@
         </div>
     </div>
 </body>
-
 
 </html>
 <script>
@@ -940,6 +939,7 @@
             sideMenu.classList.toggle('hidden');
         });
     });
+   
     function showUpcoming(button) {
         document.querySelectorAll('.rectangle-group').forEach(btn => {
             btn.classList.remove('selected');
@@ -974,21 +974,28 @@
 
 
 <style>
-    .my-account-parent.hidden {
+   .my-account-parent.hidden {
         display: none;
     }
+
     .telecast-updates-wrapper {
         display: flex;
     }
+
     .rectangle-group {
-        background-color: #ccc; /* Default background color */
+        background-color: #ccc;
+        /* Default background color */
     }
+
     .rectangle-group.selected {
-        background-color: #007bff; /* Selected background color */
-        color: #fff; /* Text color when selected */
+        background-color: #007bff;
+        /* Selected background color */
+        color: #fff;
+        /* Text color when selected */
     }
-    .live-wrapper,
-    .completed-wrapper {
-        display: none;
+
+    .live-matches,
+    .completed-matches {
+        display: none; /* Initially hide these sections */
     }
 </style>
