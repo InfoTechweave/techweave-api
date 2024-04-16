@@ -5,7 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 // use Illuminate\Support\Facades\Hash;
-// use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
 
 class AuthController extends Controller
@@ -44,11 +45,43 @@ class AuthController extends Controller
     public function login(Request $request)
     {
         $user = User::where('mobile_number', $request->mobile_number)->first();
-
         if ($user) {
-            return Redirect::route('home')->with('success', 'Logged in successfully.');
+            $token = $this->authenticate();
+          Session::put('rs-token', $token);
+            return redirect()->route('home');
         } else {
-            return Redirect::back()->with('error', 'Invalid mobile number.');
+            return redirect()->back()->with('error', 'Invalid mobile number.');
         }
     }
+    public function authenticate()
+    {
+        $PROJ_KEY = 'RS_P_1765988307742887937';
+        $API_KEY = 'RS5:9bf34e6d20d616bada77893cd3013503';
+
+        $response = Http::withoutVerifying()->post("https://api.sports.roanuz.com/v5/core/${PROJ_KEY}/auth/", [
+            'api_key' => $API_KEY
+        ]);
+
+        if ($response->successful()) {
+            $responseData = $response->json();
+            $token = $responseData['data']['token'];
+            // dd($token);
+            return $token;
+        } else {
+            return null;
+        }
+    }
+
+    // public function authenticate()
+    // {
+    //     $PROJ_KEY = 'RS_P_1765988307742887937';
+    //     $API_KEY = 'RS5:9bf34e6d20d616bada77893cd3013503';
+
+    //     $response = Http::withoutVerifying()->post("https://api.sports.roanuz.com/v5/core/${PROJ_KEY}/auth/", [
+    //         'api_key' => $API_KEY
+    //     ]);
+    //     dd($response);
+
+    //     return $response->json('token');
+    // }
 }
