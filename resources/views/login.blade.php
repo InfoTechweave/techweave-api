@@ -70,6 +70,8 @@
                 <div class="login-wrapper">
                     <div class="login">LOGIN</div>
                 </div>
+                <form method="POST" action="{{ route('login') }}">
+                    @csrf
                 <div class="continue-button-inner">
                     <div class="rectangle-container">
                         <div class="rectangle-div"></div>
@@ -77,15 +79,16 @@
                             <img class="email-1-icon" alt="" src="{{ asset('img/login/email-1.svg') }}" />
                         </div>
                         <div class="registration-button"></div>
-                        <input class="forgot-password-link" placeholder="Email ID / Username" type="text" />
-                    </div>
+                        <input class="forgot-password-link" placeholder="Mobile Number"  name="mobile_number" type="number" />
+                    </div> 
                 </div>
                 <div class="login-register-call">
-                    <button class="missing-call-message">
+                    <button class="missing-call-message" type="submit">
                         <div class="missing-call-message-child"></div>
                         <div class="continue">CONTINUE</div>
                     </button>
                 </div>
+                </form>
                 <div class="continue-button-child">
                     <div class="frame-group">
                         <div class="privacy-policy-link-parent">
