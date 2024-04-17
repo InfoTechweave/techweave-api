@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-// use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Response;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -42,17 +42,22 @@ class AuthController extends Controller
     //         return back()->withErrors('Failed to send OTP. Please try again later.');
     //     }
     // }
+
     public function login(Request $request)
     {
-        $user = User::where('mobile_number', $request->mobile_number)->first();
+        $user = User::where('mobile_number', $request->mobile_number)->first(); 
+        
         if ($user) {
+            Auth::login($user);
             $token = $this->authenticate();
-          Session::put('rs-token', $token);
-            return redirect()->route('home');
+            $script = "<script>localStorage.setItem('rs-token', '" . $token . "'); window.location.href = '/home';</script>";
+            return Response::make($script, 200);
+            // return redirect()->route('home');
         } else {
             return redirect()->back()->with('error', 'Invalid mobile number.');
         }
     }
+    
     public function authenticate()
     {
         $PROJ_KEY = 'RS_P_1765988307742887937';
@@ -72,16 +77,5 @@ class AuthController extends Controller
         }
     }
 
-    // public function authenticate()
-    // {
-    //     $PROJ_KEY = 'RS_P_1765988307742887937';
-    //     $API_KEY = 'RS5:9bf34e6d20d616bada77893cd3013503';
-
-    //     $response = Http::withoutVerifying()->post("https://api.sports.roanuz.com/v5/core/${PROJ_KEY}/auth/", [
-    //         'api_key' => $API_KEY
-    //     ]);
-    //     dd($response);
-
-    //     return $response->json('token');
-    // }
+    
 }
