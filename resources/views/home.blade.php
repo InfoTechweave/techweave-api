@@ -129,7 +129,10 @@
             </div>
             {{-- Upcoming MAtch Record --}}
             <div class="team-section-1-parent upcoming-matches">
-                <div class="team-section-1">
+
+        
+                <!-- Access other match details as needed -->
+                {{-- <div class="team-section-1">
                     <div class="european-cricket-icon">
                         <div class="frame-container">
                             <div class="i-n-d-i-a-pakistan-team-parent">
@@ -360,8 +363,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="team-section-4">
+                </div> --}}
+                {{-- <div class="team-section-4">
                     <img class="team-section-4-child" alt=""
                         src="{{ asset('img/home/ellipse-6@2x.png') }}" />
 
@@ -387,7 +390,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
+                {{-- @foreach($featuredMatches as $match)
+                <li>{{ $match }}</li>
+            @endforeach --}}
             </div>
 
             {{-- Live Match Record --}}
@@ -930,7 +936,12 @@
 </body>
 
 </html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ asset('js/cricket.js') }}"></script>
+
 <script>
+    
     document.addEventListener('DOMContentLoaded', function() {
         const closeButton = document.querySelector('.close-icon');
         const sideMenu = document.querySelector('.my-account-parent');
@@ -970,6 +981,10 @@
         document.querySelector('.live-matches').style.display = 'none';
         document.querySelector('.completed-matches').style.display = 'block';
     }
+
+    
+
+
 </script>
 
 
