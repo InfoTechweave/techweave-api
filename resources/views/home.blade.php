@@ -130,7 +130,7 @@
             {{-- Upcoming MAtch Record --}}
             <div class="team-section-1-parent upcoming-matches">
 
-        
+               
                 <!-- Access other match details as needed -->
                 {{-- <div class="team-section-1">
                     <div class="european-cricket-icon">
@@ -391,9 +391,12 @@
                         </div>
                     </div>
                 </div> --}}
-                {{-- @foreach($featuredMatches as $match)
-                <li>{{ $match }}</li>
-            @endforeach --}}
+
+                @foreach($matches as $match)
+                @php
+                    var_dump($match);
+                @endphp
+            @endforeach
             </div>
 
             {{-- Live Match Record --}}

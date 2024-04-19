@@ -45,14 +45,16 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $user = User::where('mobile_number', $request->mobile_number)->first(); 
-        
+        $user = User::where('mobile_number', $request->mobile_number)->first();
+    
         if ($user) {
             Auth::login($user);
             $token = $this->authenticate();
-            $script = "<script>localStorage.setItem('rs-token', '" . $token . "'); window.location.href = '/home';</script>";
-            return Response::make($script, 200);
-            // return redirect()->route('home');
+            if ($token) {
+                $user->token = $token;
+                $user->save();
+            }
+            return redirect()->route('home');
         } else {
             return redirect()->back()->with('error', 'Invalid mobile number.');
         }
@@ -70,7 +72,6 @@ class AuthController extends Controller
         if ($response->successful()) {
             $responseData = $response->json();
             $token = $responseData['data']['token'];
-            // dd($token);
             return $token;
         } else {
             return null;
