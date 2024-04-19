@@ -42,4 +42,5 @@ Route::post('/register',  [AuthController::class, 'register'])->name('register')
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 // Route::get('/fetch-matches', [CricketController::class, 'getFeaturedMatches'])->name('getFeaturedMatches');
 Route::get('/home', [CricketController::class, 'getFeaturedMatches'])->name('home');
+// Route::get('/home', [CricketController::class, 'getMatch'])->name('home');
 
