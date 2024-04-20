@@ -1,30 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    {{-- <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" /> --}}
     <link rel="stylesheet" href="{{ asset('css/login/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/login/index.css') }}">
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 </head>
-
 <body>
     <div class="desktop-2">
         <div class="desktop-2-inner">
             <div class="rectangle-parent">
                 <img class="frame-child" alt="" src="{{ asset('img/login/rectangle-31@2x.png') }}" />
-
                 <div class="vignette-parent">
                     <img class="vignette-icon" alt="" src="{{ asset('img/login/vignette@2x.png') }}" />
-
                     <img class="vignette-icon1" alt="" src="{{ asset('img/login/vignette@2x.png') }}" />
-
                     <b class="download-message">8010400200</b>
                     <h3 class="to-download-our-container">
                         <p class="to-download-our">To Download our App</p>

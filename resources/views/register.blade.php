@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
@@ -8,9 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/register/index.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica Neue:wght@700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
-
 </head>
-
 <body>
     <div class="register-page">
         <div class="register-page-inner">
@@ -131,7 +128,5 @@
         </div>
     </div>
     </div>
-
 </body>
-
 </html>

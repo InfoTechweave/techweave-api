@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
     <link rel="stylesheet" href="{{ asset('css/home/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home/index.css') }}">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,700;1,600&display=swap" />
 </head>
-
 <body>
     <div class="my-profile">
         <div class="frame-parent">
@@ -34,9 +31,7 @@
                         <div class="score-board">
                             <img class="score-board-child" alt=""
                                 src="{{ asset('img/home/polygon-11.svg') }}" />
-
                             <img class="score-board-item" alt="" src="{{ asset('img/home/polygon-21.svg') }}" />
-
                             <img class="close-icon" loading="lazy" alt=""
                                 src="{{ asset('img/home/close.svg') }}" />
                         </div>
@@ -45,7 +40,6 @@
                     <div class="timer">
                         <div class="icon-winning-team">
                             <img class="prize-label-icon" alt="" src="{{ asset('img/home/polygon-31.svg') }}" />
-
                             <img class="discount-icon" loading="lazy" alt=""
                                 src="{{ asset('img/home/discount1@2x.png') }}" />
                         </div>
@@ -53,7 +47,6 @@
                 </div>
                 <div class="game-section">
                     <img class="game-section-child" alt="" src="{{ asset('img/home/rectangle-12.svg') }}" />
-
                     <div class="rules-link-wrapper">
                         <div class="rules-link">
                             <div class="logo-footer-wrapper">

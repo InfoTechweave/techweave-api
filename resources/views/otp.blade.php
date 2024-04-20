@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
     <link rel="stylesheet" href="{{ asset('css/otp/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/otp/index.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
@@ -32,29 +31,29 @@
                             <div class="change">Change</div>
                         </div>
                         {{-- <div> --}}
-                            {{-- <form>
+                        {{-- <form>
                                 @csrf --}}
-                                <div class="frame-wrapper">
+                        <div class="frame-wrapper">
 
-                                    <div class="frame-child"></div>
-                                    <input class="rectangle-parent" placeholder="Enter OTP" name="otp" />
-                                    {{-- <div class="frame-div">
+                            <div class="frame-child"></div>
+                            <input class="rectangle-parent" placeholder="Enter OTP" name="otp" />
+                            {{-- <div class="frame-div">
                           <button class="rectangle-group" type="submit"> <div class="frame-item"></div>
                             <div class="verify">Verify</div>
                         </button>
                           </div> --}}
-                                </div>
-                                <div class="frame-div">
-                                    <button type="submit" class="rectangle-group">
-                                        <div class="frame-item"></div>
-                                        <div class="verify">Verify</div>
-                                    </button>
-                                </div>
-                            {{-- </form> --}}
+                        </div>
+                        <div class="frame-div">
+                            <button type="submit" class="rectangle-group">
+                                <div class="frame-item"></div>
+                                <div class="verify">Verify</div>
+                            </button>
+                        </div>
+                        {{-- </form> --}}
                         {{-- </div> --}}
                         <div class="resend-otp-in-20s-wrapper">
-                <div class="resend-otp-in">Resend OTP in 20s</div>
-              </div>
+                            <div class="resend-otp-in">Resend OTP in 20s</div>
+                        </div>
                         {{-- <div class="frame-div">
                 <button class="rectangle-group">
                   <div class="frame-item"></div>
@@ -108,16 +107,13 @@
         <div class="frame-parent2">
             <div class="rectangle-parent1">
                 <img class="rectangle-icon" alt="" src="{{ asset('img/otp/rectangle-31@2x.png') }}" />
-
                 <img class="vignette-icon" alt="" src=" {{ asset('img/otp/vignette@2x.png') }}" />
-
                 <img class="vignette-icon1" alt="" src=" {{ asset('img/otp/vignette@2x.png') }}" />
             </div>
             <div class="frame-parent3">
                 <div class="frame-parent4">
                     <button class="vector-parent">
                         <img class="vector-icon" alt="" src=" {{ asset('img/otp/vector-1.svg') }}" />
-
                         <div class="app-only-feature">App Only Feature</div>
                     </button>
                     <div class="rectangle-parent2">
@@ -125,7 +121,6 @@
                         <div class="frame-wrapper2">
                             <div class="vector-group">
                                 <img class="frame-child1" alt="" src="{{ asset('img/otp/vector-2.svg') }}" />
-
                                 <img class="bar-icon" loading="lazy" alt=""
                                     src="{{ asset('img/otp/bar-icon.svg') }}" />
                             </div>
@@ -161,7 +156,6 @@
                         <div class="available-on">AVAILABLE ON</div>
                     </div>
                     <img class="android-icon" alt="" src="{{ asset('img/otp/android.svg') }}" />
-
                     <img class="apple-icon" alt="" src="{{ asset('img/otp/apple.svg') }}" />
                 </button>
             </div>

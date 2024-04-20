@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
     <link rel="stylesheet" href="{{ asset('css/card/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/card/index.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" />
-
-    {{-- <style>
-        @font-face {
-            font-family: "Nomenclatur";
-            src: url("./public/Nomenclatur-LightCondensed.ttf");
-            font-weight: 400;
-        }
-    </style> --}}
 </head>
-
 <body>
     <div class="debit-card">
         <div class="frame-parent">
@@ -42,15 +31,6 @@
                     </div>
                 </div>
             </div>
-
-            {{-- <div class="frame-container">
-                <div class="frame-div">
-                    <div class="frame-wrapper1">
-                        <input type="radio" id="credit_card" name="payment_method" value="credit_card">
-                    </div>
-                    <div class="credit-card">Credit Card</div>
-                </div>
-            </div> --}}
             <div class="frame-wrapper2">
                 <div class="frame-parent1">
                     <div class="frame-parent2">
@@ -197,38 +177,10 @@
             <img class="vignette-icon2" alt="" src="{{ asset('img/card/vignette1@2x.png') }}" />
         </div>
     </div>
-    
 </body>
-
 </html>
 <script>
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const creditCardRadio = document.getElementById('credit_card');
-//     const debitCardRadio = document.getElementById('DEBIT_card'); // Corrected ID
-//     const netBankingRadio = document.getElementById('net_banking'); // Corrected ID
-//     const creditCardDetails = document.querySelector('.nilay');
-//     const debitCardDetails = document.querySelector('.frame-parent4');
-//     const netDetails = document.querySelector('.net'); // Corrected class
-
-//     creditCardRadio.addEventListener('click', function () {
-//         creditCardDetails.style.display = 'block';
-//         debitCardDetails.style.display = 'none';
-//         netDetails.style.display = 'none';
-//     });
-
-//     debitCardRadio.addEventListener('click', function () {
-//         creditCardDetails.style.display = 'none';
-//         debitCardDetails.style.display = 'block';
-//         netDetails.style.display = 'none';
-//     });
-
-//     netBankingRadio.addEventListener('click', function () {
-//         netDetails.style.display = 'block'; 
-//         creditCardDetails.style.display = 'none';
-//         debitCardDetails.style.display = 'none';
-//     });
-// });
 document.addEventListener("DOMContentLoaded", function () {
     const creditCardRadio = document.getElementById('credit_card');
     const debitCardRadio = document.getElementById('DEBIT_card');
@@ -237,7 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const debitCardDetails = document.querySelector('.nilay1');
     const netDetails = document.querySelector('.net');
 
-    // Initially hide all sections except credit card details
     debitCardDetails.style.display = 'none';
     netDetails.style.display = 'none';
 

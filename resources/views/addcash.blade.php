@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-
     <link rel="stylesheet" href="{{ asset('css/addcash/global.css') }}">
     <link rel="stylesheet" href="{{ asset('css/addcash/index.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
 </head>
-
 <body>
     <div class="add-cash">
         <div class="frame-parent">
