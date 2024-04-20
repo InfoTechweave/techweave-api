@@ -421,11 +421,11 @@
                     </div>
                 </div> --}}
            
-                {{-- @foreach($getmatch as $match)
+                @foreach($getmatch as $match)
                 @php
                     var_dump($match);
                 @endphp
-                        @endforeach --}}
+                        @endforeach
             </div>
 
             {{-- Completed Match Record --}}
