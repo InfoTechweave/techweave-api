@@ -121,7 +121,7 @@
                 </div>
             </div>
             {{-- Upcoming MAtch Record --}}
-            <div class="team-section-1-parent upcoming-matches">
+            {{-- <div class="team-section-1-parent upcoming-matches">
                 @if(isset($matches['data']) && count($matches['data']['matches']) > 0)
                 <ul>
                     @foreach ($matches['data']['matches'] as $match)
@@ -151,7 +151,7 @@
             @else
                 <p>No matches available at the moment.</p>
             @endif
-            </div>
+            </div> --}}
 
             {{-- Live Match Record --}}
             <div class="team-section-1-parent live-matches">
@@ -414,11 +414,11 @@
                     </div>
                 </div> --}}
            
-                @foreach($getmatch as $match)
+                {{-- @foreach($getmatch as $match)
                 @php
                     var_dump($match);
                 @endphp
-                        @endforeach
+                        @endforeach --}}
             </div>
 
             {{-- Completed Match Record --}}

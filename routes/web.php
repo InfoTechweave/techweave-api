@@ -42,6 +42,6 @@ Route::get('/card', function () {
 Route::post('/register',  [AuthController::class, 'register'])->name('register');
 Route::post('/login', [AuthController::class, 'login'])->name('login');
 // Route::get('/fetch-matches', [CricketController::class, 'getFeaturedMatches'])->name('getFeaturedMatches');
-Route::get('/home', [CricketController::class, 'getFeaturedMatches'])->name('home');
-Route::get('/home', [GetmatchController::class, 'getMatch'])->name('home');
+// Route::get('/home', [CricketController::class, 'getFeaturedMatches'])->name('home');
+// Route::get('/home', [GetmatchController::class, 'getMatch'])->name('home');
 
